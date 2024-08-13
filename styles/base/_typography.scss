@@ -1,5 +1,5 @@
 body {
-  font-family: "Karla", sans-serif;
+  font-family: "__Cormorant_Upright_6c3f77", sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
@@ -17,4 +17,6 @@ h2 {
 
 .title-all-caps {
   text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
 }

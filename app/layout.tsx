@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { Cormorant_Upright } from 'next/font/google';
+import { Cormorant_Upright, Karla } from 'next/font/google';
 import "../styles/main.scss";
 
+//TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style
 const cormorant = Cormorant_Upright({
-  subsets: ["latin"] ,
+  subsets: ["latin"],
   weight: "400",
   variable: '--font-cormorant',
   display: 'swap',
 });
+
+const karla = Karla({
+  subsets: ["latin"],
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cormorant.className}>
+    <html lang="en" className={karla.className}>
       <body>{children}</body>
     </html>
   );
