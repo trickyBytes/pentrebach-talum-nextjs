@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; //otherwise sudo element doesn't display on page
+    display: table;
+    clear: both; //clear float left and right
+  }
+}
