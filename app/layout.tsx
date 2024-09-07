@@ -1,6 +1,6 @@
-import type {Metadata} from "next";
+import type {Metadata} from 'next';
 import {Cormorant_Upright, Karla} from 'next/font/google';
-import "../styles/main.scss"; //TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style
+import '../styles/main.scss'; //TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style
 
 //TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style
 const cormorant = Cormorant_Upright({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={karla.className}>
-      <body className={'Container'}>{children}</body>
+      <body className={'container'}>{children}</body>
     </html>
   );
 }

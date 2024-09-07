@@ -33,3 +33,10 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+//vh - viewport height
+//vw - viewport width
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content min-content);
+}
