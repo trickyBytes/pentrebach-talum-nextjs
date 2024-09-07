@@ -1,0 +1,71 @@
+.homepage {
+  background-color: #eee;
+  width: 1000px;
+  //margin: 30px auto;
+
+  //Applies this to all child elements of .challenge
+  & > * {
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+
+  display: grid;
+  grid-template-rows:
+          [header-start] 100px [header-end hero-start] 550px [hero-end property-start] 170px [property-end box-start] 200px [box-end];
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]) [grid-end];
+
+  grid-gap: 30px;
+}
+
+.header {
+  background-color: orangered;
+  grid-row: header-start / header-end;
+  grid-column: col-start 1 / grid-end;
+}
+
+.hero {
+  background-color: orangered;
+  grid-row: hero-start / hero-end;
+  grid-column: col-start 1 / grid-end;
+}
+
+.content-section--header {
+  background-color: orangered;
+  grid-row: property-start / property-end;
+  grid-column: col-start 1 / grid-end;
+  justify-self: center;
+}
+
+.box {
+
+  &--1 {
+    grid-column: col-start 1 / col-end 2;
+    grid-row: box-start / box-end;
+    
+  }
+
+  &--2 {
+    grid-column: col-start 2 / col-end 3;
+    grid-row: box-start / box-end;
+  }
+
+  &--3 {
+    grid-column: col-start 3 / col-end 4;
+    grid-row: box-start / box-end;
+  }
+}
+
+//.sidebar {
+//  grid-column: col-end 3 / grid-end;
+//  grid-row: box-start / main-end;
+//}
+//
+//.maincontent {
+//  grid-column: col-start 1 / col-end 3;
+//}
+//
+//.footer {
+//  grid-column: col-start 1 / grid-end;
+//}

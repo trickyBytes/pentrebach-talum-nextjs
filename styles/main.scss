@@ -1,10 +1,17 @@
-@import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
+//@import "abstracts/variables";
+//@import "abstracts/functions";
+//@import "abstracts/mixins";
 
 @import "base/base";
 @import "base/typography";
+@import "base/header";
+@import "base/realtors";
+@import "base/features";
+@import "base/story";
+@import "base/homes";
+@import "base/gallery";
+@import "base/footer";
 
-@import "components/buttons";
-
-@import "layout/grid";
+//@import "components/buttons";
+//
+//@import "layout/css_grid";
