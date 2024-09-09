@@ -36,7 +36,17 @@ body {
 
 //vh - viewport height
 //vw - viewport width
+//min-content - for row be min height to show content
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content min-content);
+  //* column layout, side bar is 8rem the 1fr each side of the 8 column allows us to viewport
+  //minmax(6rem, 1fr) means the spacer column either side of homes never get's smaller than 60px but grows to 1fr
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+          [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+  & > * {
+    padding: 40px;
+    font-size: 3rem;
+  }
 }
