@@ -74,7 +74,18 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <div className="story__pictures">Story Pictures</div>
+      <div className="story__pictures">
+        <img
+          src="/img/story-1.jpeg"
+          alt="Couple with new house"
+          className="story__img--1"
+        />
+        <img
+          src="/img/story-2.jpeg"
+          alt="New house"
+          className="story__img--2"
+        />
+      </div>
       <div className="story__content">
         <h3 className="heading-3  heading-2--dar mb-sm">Happy Customers</h3>
         <h2 className="heading-2 heading-2--dark mb-md">
