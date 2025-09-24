@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Upright, Karla } from 'next/font/google';
 import "../styles/main.scss";
 
-//TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style
+//TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style, also how this is specified
 const cormorant = Cormorant_Upright({
   subsets: ["latin"],
   weight: "400",
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={karla.className}>
+    <html lang="en">
       <body className="container">
         <header className="header">
           Header

@@ -8,3 +8,16 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 6rem;
 }
+
+.item {
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}

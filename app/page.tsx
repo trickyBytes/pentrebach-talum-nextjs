@@ -11,10 +11,10 @@ export default function Home() {
                     <h2>Eyri, where the sea meets mountains</h2>
                 </div> */}
                 <div className="item">
-                    <svg className="item_icon">
+                    <svg className="item__icon">
                         <use xlinkHref="img/sprite.svg#icon-global"></use>
                     </svg>
-                    <h4 className="heading">
+                    <h4 className="heading-4">
                         Stunning Sea Views
                     </h4>
                     <p className="item__text">
@@ -22,10 +22,10 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="item">
-                    <svg className="item_icon">
-                        <use xlinkHref="img/sprite.svg#icon-global"></use>
+                    <svg className="item__icon">
+                        <use xlinkHref="img/sprite.svg#icon-key"></use>
                     </svg>
-                    <h4 className="heading">
+                    <h4 className="heading-4">
                         Our Properties
                     </h4>
                     <p className="item__text">
@@ -33,10 +33,10 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="item">
-                    <svg className="item_icon">
-                        <use xlinkHref="img/sprite.svg#icon-global"></use>
+                    <svg className="item__icon">
+                        <use xlinkHref="img/sprite.svg#icon-presentation"></use>
                     </svg>
-                    <h4 className="heading">Activities</h4>
+                    <h4 className="heading-4">Activities</h4>
                     <p className="item__text">
                         Take a 10 minute stroll to the beach or an energetic game of rounders in our large games field. Many more activities such as pony trekking, stand-up-paddleboarding and mountain biking are just a short drive away.
                     </p>
