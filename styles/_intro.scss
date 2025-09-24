@@ -1,16 +1,15 @@
 .intro {
-    // background-color: $color-grey-dark-1;
-    grid-column: center-start / center-end;
-    margin: 15rem 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-column: center-start / center-end;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin: 15rem 0;
     gap: 6rem;
+    align-items: start;
+    justify-items: center;
+    text-align: center;
 }
 
 .item {
-    display: grid;
-    justify-items: center;
-    text-align: center;
     padding: 2rem;
 
     &__icon {
