@@ -26,7 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={karla.className}>
-      <body>{children}</body>
+      <body className="container">
+        <header className="header">
+          Header
+        </header>
+        {children}
+        <footer className="footer">
+          Footer
+        </footer>
+      </body>
     </html>
   );
 }

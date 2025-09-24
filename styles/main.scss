@@ -1,10 +1,11 @@
-@import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
+@import "base";
+@import "typography";
 
-@import "base/base";
-@import "base/typography";
-
-@import "components/buttons";
-
-@import "layout/grid";
+@import "sidebar";
+@import "header";
+@import "intro";
+@import "hero";
+@import "story";
+@import "homes";
+@import "gallery";
+@import "footer";
