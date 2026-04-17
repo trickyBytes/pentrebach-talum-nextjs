@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Upright, Karla } from 'next/font/google';
 import "../styles/main.scss";
+import Header from "./components/Header";
 
 //TODO: How do we make the classname available to use in scss - atm I need to get it by looking at web code style, also how this is specified
 const cormorant = Cormorant_Upright({
@@ -27,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="container">
-        <header className="header">
-          Header
-        </header>
+        <Header />
         {children}
         <footer className="footer">
           Footer
