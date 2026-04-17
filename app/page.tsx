@@ -2,7 +2,31 @@ export default function Home() {
     return (
         <>
             <section className="hero">
-                Hero Section
+                <div className="hero__content">
+                    <h1 className="hero__title">Y Popty</h1>
+                    <div className="hero__price-row">
+                        <div className="hero__price-container">
+                            <span className="hero__price">£300</span>
+                            <span className="hero__currency">gbp</span>
+                        </div>
+                        <a href="/contact" className="hero__button">book today!</a>
+                    </div>
+                    <p className="hero__subtitle">Weekend, 3 nights, Friday to Monday</p>
+                    <div className="hero__features">
+                        <div className="hero__feature">
+                            <img src="/img/66a8c4268dad82efb9a0c08e_Hero-1.png" alt="" width={50} className="hero__feature-icon" />
+                            <div className="hero__feature-text">Mountain View<br />3 Bedrooms</div>
+                        </div>
+                        <div className="hero__feature">
+                            <img src="/img/66a8c4268dad82efb9a0c0a4_Hero-2.png" alt="" width={50} className="hero__feature-icon" />
+                            <div className="hero__feature-text">1 Bathroom</div>
+                        </div>
+                        <div className="hero__feature hero__feature--last">
+                            <img src="/img/66a8c4268dad82efb9a0c09b_Hero-3.png" alt="" width={43} className="hero__feature-icon" />
+                            <div className="hero__feature-text">Concierge<br />24 hours</div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section className="intro">

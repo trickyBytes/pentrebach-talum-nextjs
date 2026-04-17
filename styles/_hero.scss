@@ -1,4 +1,205 @@
 .hero {
-    background-color: $color-primary-dark;
     grid-column: full-start / full-end;
+    padding: 0;
+    font-size: inherit;
+    position: relative;
+    height: 75rem;
+    overflow: hidden;
+    background-image: url('/img/66a8d6ba4ae614fdfb196d56_main3.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        position: absolute;
+        bottom: 3rem;
+        left: 6rem;
+        width: 60%;
+        min-width: 50rem;
+        max-width: 75rem;
+    }
+
+    &__title {
+        font-family: $font-display;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 5.8rem;
+        color: $color-grey-light-1;
+    }
+
+    &__price-row {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__price-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__price {
+        font-family: $font-display;
+        font-size: 5rem;
+        line-height: 5rem;
+        color: $color-grey-light-1;
+        margin-right: 0.5rem;
+        position: relative;
+        top: -0.8rem;
+    }
+
+    &__currency {
+        font-family: $font-display;
+        font-size: 4rem;
+        line-height: 4rem;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+        position: relative;
+        top: -0.8rem;
+    }
+
+    &__button {
+        display: inline-block;
+        border: 1px solid $color-grey-light-1;
+        background-color: $color-grey-light-1;
+        color: $color-grey-dark-2;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 19px;
+        padding: 1rem 4rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.8rem;
+        transition: color 0.2s, background-color 0.2s;
+
+        &:hover {
+            color: $color-grey-light-1;
+            background-color: transparent;
+        }
+    }
+
+    &__subtitle {
+        color: $color-grey-light-1;
+        font-weight: 300;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__features {
+        display: flex;
+        align-items: center;
+    }
+
+    &__feature {
+        display: flex;
+        align-items: center;
+        padding: 1.3rem 2rem 1.3rem 0;
+        margin-right: 2rem;
+        border-right: 1px solid $color-grey-light-1;
+
+        &--last {
+            border-right: none;
+            margin-right: 0;
+        }
+    }
+
+    &__feature-icon {
+        margin-right: 1.2rem;
+    }
+
+    &__feature-text {
+        color: $color-grey-light-1;
+        font-size: 1.45rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+    }
+
+    // Tablet landscape
+    @media (max-width: 991px) {
+        height: 60rem;
+
+        &__content {
+            left: 2.5rem;
+            right: 2.5rem;
+            width: auto;
+            min-width: unset;
+            max-width: unset;
+        }
+
+        &__title {
+            font-size: 4.6rem;
+            line-height: 5.4rem;
+        }
+
+        &__feature {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    // Tablet portrait
+    @media (max-width: 767px) {
+        height: 55rem;
+
+        &__title {
+            font-size: 4.4rem;
+            line-height: 5.2rem;
+        }
+
+        &__feature {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__feature-icon {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    // Mobile
+    @media (max-width: 479px) {
+        height: 60rem;
+
+        &__content {
+            left: 1rem;
+            right: 1rem;
+        }
+
+        &__title {
+            font-size: 4.6rem;
+            line-height: 4rem;
+        }
+
+        &__price-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        &__price {
+            margin-bottom: 0.8rem;
+        }
+
+        &__features {
+            width: 100%;
+        }
+
+        &__feature {
+            width: 33.33%;
+            padding-left: 4%;
+            padding-right: 0.5rem;
+            margin-right: 0;
+        }
+
+        &__feature-icon {
+            width: 4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        &__feature-text {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+        }
+    }
 }
