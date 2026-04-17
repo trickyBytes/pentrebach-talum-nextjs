@@ -2,20 +2,20 @@
     grid-column: full-start / full-end;
     padding: 0;
     font-size: inherit;
-    position: relative;
-    height: 75rem;
-    overflow: hidden;
-    background-image: url('/img/66a8d6ba4ae614fdfb196d56_main3.jpg');
+    display: grid;
+    align-content: end;
+    min-height: 75rem;
+    background-image:
+        linear-gradient(to bottom, transparent 33.33%, rgba($color-secondary, 0.75)),
+        url('/img/66a8d6ba4ae614fdfb196d56_main3.jpg');
     background-size: cover;
     background-position: center;
 
     &__content {
-        position: absolute;
-        bottom: 3rem;
-        left: 6rem;
         width: 60%;
         min-width: 50rem;
         max-width: 75rem;
+        padding: 0 0 3rem 6rem;
     }
 
     &__title {
@@ -116,14 +116,13 @@
 
     // Tablet landscape
     @media (max-width: 991px) {
-        height: 60rem;
+        min-height: 60rem;
 
         &__content {
-            left: 2.5rem;
-            right: 2.5rem;
-            width: auto;
+            width: 100%;
             min-width: unset;
             max-width: unset;
+            padding: 0 2.5rem 3rem;
         }
 
         &__title {
@@ -139,7 +138,13 @@
 
     // Tablet portrait
     @media (max-width: 767px) {
-        height: 55rem;
+        grid-template-rows: minmax(0, 1fr) auto;
+        height: calc(100dvh - 8rem);
+        min-height: unset;
+
+        &__content {
+            grid-row: 2;
+        }
 
         &__title {
             font-size: 4.4rem;
@@ -157,13 +162,13 @@
         }
     }
 
-    // Mobile
+    // Mobile portrait
     @media (max-width: 479px) {
-        height: 60rem;
+        height: calc(100dvh - 8rem);
+        min-height: unset;
 
         &__content {
-            left: 1rem;
-            right: 1rem;
+            padding: 0 1rem 3rem;
         }
 
         &__title {

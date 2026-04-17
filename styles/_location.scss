@@ -1,0 +1,91 @@
+.location {
+    grid-column: full-start / full-end;
+    font-size: inherit;
+    padding: 10rem 0 9rem;
+    background-color: $color-bg-3;
+
+    &__wrapper {
+        max-width: 122.5rem;
+        margin: 0 auto;
+        padding: 0 2.5rem;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__eyebrow {
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        display: inline-block;
+        margin: 0;
+    }
+
+    &__title {
+        font-family: $font-display;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 4.2rem;
+        margin-top: 0.8rem;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+    }
+
+    &__card {
+        background-color: $color-grey-light-1;
+        padding: 3rem 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__card-icon {
+        width: 5rem;
+        height: 5rem;
+        object-fit: contain;
+    }
+
+    &__card-name {
+        font-family: $font-display;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: $color-secondary;
+    }
+
+    &__card-distance {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $color-grey-dark-2;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 767px) {
+        padding: 6rem 0 7rem;
+
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__title {
+            font-size: 3.2rem;
+            line-height: 3.4rem;
+        }
+    }
+
+    @media (max-width: 479px) {
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
